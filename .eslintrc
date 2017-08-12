@@ -1,0 +1,22 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier",
+        "prettier/react"
+    ],
+    "env": {
+        "browser": true,
+    },
+    "plugins": [
+        "prettier",
+        "import",
+        "react"
+    ],
+    "rules": {
+        "prettier/prettier": ["error", {"singleQuote": true, "parser": "flow"}],
+        "no-underscore-dangle": "off",
+        "comma-dangle": "off",
+        "object-curly-spacing": "off",
+        "react/jsx-filename-extension": "off"
+    }
+}
