@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
+
+import Wrapper from './Wrapper';
+import Header from './Header';
 
 const NotFound = () =>
-  <div className="App">
-    <div className="App-header">
-      <h2>Not FOUND!</h2>
-    </div>
-  </div>;
+  <Wrapper>
+    <Header>Not FOUND!</Header>
+  </Wrapper>;
 
 export default NotFound;

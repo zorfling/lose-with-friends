@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './App.css';
+import Wrapper from './Wrapper';
+import Header from './Header';
 
 const App = props =>
-  <div className="App">
-    <h2 className="App-header">
+  <Wrapper>
+    <Header>
       Team {props.match.params.teamId}
-    </h2>
-  </div>;
+    </Header>
+  </Wrapper>;
 
 App.propTypes = {
   match: PropTypes.shape({

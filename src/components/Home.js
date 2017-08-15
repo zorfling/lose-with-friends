@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import slugify from 'slugify';
-import './App.css';
+
+import Wrapper from './Wrapper';
+import Header from './Header';
 
 class Home extends Component {
   handleSubmit(evt) {
@@ -11,8 +13,8 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h2 className="App-header">Lose with Friends</h2>
+      <Wrapper>
+        <Header>Lose with Friends</Header>
         <form onSubmit={evt => this.handleSubmit(evt)}>
           <input
             ref={input => {
@@ -24,7 +26,7 @@ class Home extends Component {
           />
           <input type="submit" value="Enter team" />
         </form>
-      </div>
+      </Wrapper>
     );
   }
 }
